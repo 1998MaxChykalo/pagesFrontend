@@ -1,0 +1,62 @@
+.slider {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+  }
+  .slide {
+    float: left;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .holder {
+    width: 300vw;
+  }
+
+
+  #slide-1 {
+    background-image: url('../../img/mountain_first_slide.jpg');
+    background-size: cover;
+  }
+  #slide-2 {
+    background-image: url('../../img/mountain_second_slide.jpg');
+    background-size: cover;
+  }
+  #slide-3 {
+    background-image: url('../../img/mountain_third_slide.jpg');
+    background-size: cover;
+  }
+  .slider {
+      position: relative;
+  }
+  .prev,.next {
+    position: absolute;
+    top: 85%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: rgba(0,0,0,.7);
+    transition: .4s all;
+    &:hover {
+        color: #000;
+        background-color: rgba(175, 227, 222, 0.7);
+        cursor: pointer;
+    }
+  }
+  .prev {
+    left: calc(50% - 250px);
+    &:hover {
+        transform: scale(1.4) rotate(-360deg);
+    }
+  }
+  .next {
+    left: calc(50% + 150px);
+    &:hover {
+        transform: scale(1.4) rotate(360deg);
+    }
+  }
