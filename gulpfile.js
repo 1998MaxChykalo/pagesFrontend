@@ -19,11 +19,11 @@ var config = {
 
 var path = {
     build: {
-        html: 'dest/',
-        js: 'dest/js/',
-        css: 'dest/css/',
-        img: 'dest/img/',
-        fonts: 'dest/fonts/'
+        html: 'docs/',
+        js: 'docs/js/',
+        css: 'docs/css/',
+        img: 'docs/img/',
+        fonts: 'docs/fonts/'
     },
     src: {
         html: 'src/*.html',
@@ -39,13 +39,13 @@ var path = {
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
-    clean: './dest'
+    clean: './docs'
 };
 
 gulp.task("webserver", function(){
     browserSync({
         server: {
-            baseDir: './dest'
+            baseDir: './docs'
         },
         host: 'localhost',
         port: 3000,
