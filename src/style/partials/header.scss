@@ -2,6 +2,13 @@
     text-align: center;
     padding: 15px 0;
 }
+.hidden {
+    display: none;
+}
+
+.showed {
+    display: inline-block;
+}
 
 .fixed-nav-bar {
     background: linear-gradient(rgba(208,208,208,.7),transparent);
@@ -13,8 +20,29 @@
     height: 20vh;
     background-color: transparent;
     padding: 7vh 0;
+    .inner-fixed-nav-bar {
+        height: 100%;
+        .nav-bar {
+            padding: 0px 0 10px 0;
+        }
+        ul {
+            height: 100%;
+            a {
+                padding: 15px;
+            }
+        }
+    }
 }
 
+.dark {
+    height: 14vh;
+    background: rgba(16,16,16,.9);
+    padding: 3vh 0 ;
+    
+    a {
+        color: #fff;
+    }
+}
 
 ul {
     list-style: none;
@@ -65,10 +93,8 @@ ul {
                 background: #aaa;
                 height: 1px;
                 text-align: left;
-
             }
         }
-
     }
 }
 
@@ -86,4 +112,4 @@ ul {
       height: 100%;
       background: #333;
     }
-  }
+}
