@@ -101,14 +101,20 @@ gulp.task('fonts:build', function() {
 gulp.task('icons', function() {
     return gulp.src(config.bowerDir + '/font-awesome/fonts/**.*')
                 .pipe(gulp.dest(path.build.fonts))
-})
+});
+
+gulp.task('copy',function(){
+    gulp.src(config.bowerDir)
+        .pipe(gulp.dest('docs/'));
+});
 
 gulp.task('build', [
     'html:build',
     'js:build',
     'style:build',
     'image:build',
-    'fonts:build'
+    'fonts:build',
+    'copy'
 ]);
 
 gulp.task('watch', function(){

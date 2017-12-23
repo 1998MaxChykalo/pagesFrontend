@@ -10,6 +10,13 @@
     display: inline-block;
 }
 
+#someDiv{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
 .fixed-nav-bar {
     background: linear-gradient(rgba(208,208,208,.7),transparent);
     position: fixed;
@@ -35,9 +42,9 @@
 }
 
 .dark {
-    height: 14vh;
+    height: 11vh;
     background: rgba(16,16,16,.9);
-    padding: 3vh 0 ;
+    padding: 2vh 0 ;
     
     a {
         color: #fff;
