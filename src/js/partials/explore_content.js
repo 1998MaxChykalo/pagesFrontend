@@ -4,14 +4,13 @@ $(function(){
         var windowWidth = $(window).width();
     
         if(windowWidth < 768) {
-            replaceClasses($('.explore .title'),'col-5','col-12');
-            replaceClasses($('.explore .description'),'col-7','col-12');
+            replaceClasses($('.explore+.row>.title'),'col-5','col-12');
+            replaceClasses($('.explore+.row>.description'),'col-7','col-12');
             $('.explore').addClass('col-12');
         }
         else {
-            
-            replaceClasses($('.explore .title'),'col-12','col-5');
-            replaceClasses($('.explore .description'),'col-12','col-7');
+            replaceClasses($('.explore>+row>.title'),'col-12','col-5');
+            replaceClasses($('.explore>+row>.description'),'col-12','col-7');
             $('.explore').removeClass('col-12');
         }
     

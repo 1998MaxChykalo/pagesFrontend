@@ -3,7 +3,7 @@ $break-small: 500;
 #content {
     position: relative;
     margin: auto;
-    padding: 10vh 10vh;
+    padding: 10vh;
     background-color: #fffeee;
     .explore {
         font-size: .67em;
@@ -12,7 +12,8 @@ $break-small: 500;
         text-transform: uppercase;
     }
     .row {    
-        margin-top: 5vh;
+        margin-top: 2vh;
+        line-height: 1.5;
         .title {
             margin: 4vh 0;
             p {
@@ -29,7 +30,6 @@ $break-small: 500;
                 font-size: .8em;
                 letter-spacing: .1em;
                 margin: 4vh 0;
-                line-height: 1.5;
             }
             p {
                 color: #555;

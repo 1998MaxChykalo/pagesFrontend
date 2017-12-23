@@ -140,7 +140,10 @@ ul {
         ul {
             align-items: center;
             justify-content: center;
-            flex-direction: row;
+            flex-direction: row;  
+            li:hover {
+                transform: scale(.8);
+            }          
         }
     }
 }
