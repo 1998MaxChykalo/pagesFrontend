@@ -11,27 +11,26 @@
     <link rel="stylesheet" href="css/partials/header.css">
     <link rel="stylesheet" href="css/partials/slider_main.css">
     <link rel="stylesheet" href="css/partials/explore_content.css">
+    <link rel="stylesheet" href="css/partials/advantages.css">
+
 </head>
 <body>
     <div class="container">
         
-        <header id="someDiv" class="fixed-nav-bar">
-            <div class="inner-fixed-nav-bar">
-                <div class="row">
-                    <div class="col-4 logo">
-                        <img src="img/logo_black.png" class="showed" alt="">
-                        <img src="img/logo_white.png" class="hidden" alt="">
-                            
-                    </div>
-                    <nav class="nav-bar col-8">
-                        <ul>
-                            <li><a href="#" target="blank" id="">Home</a></li>
-                            <li><a href="#" target="blank" id="">About</a></li>
-                            <li><a href="#" target="blank" id="">Portfolio</a></li>
-                            <li><a href="#" target="blank" id="">About</a></li>
-                        </ul>
-                    </nav>
+        <header id="transitionable" class="fixed-nav-bar">
+            <div class="row">
+                <div class="col-4 logo">
+                    <img src="img/logo_black.png" class="showed" alt="">
+                    <img src="img/logo_white.png" class="hidden" alt="">    
                 </div>
+                <nav class="nav-bar col-8">
+                    <ul>
+                        <li><a href="#" target="blank" id="">Home</a></li>
+                        <li><a href="#" target="blank" id="">About</a></li>
+                        <li><a href="https://1998maxchykalo.github.io/" target="blank" id="">Portfolio</a></li>
+                        <li><a href="#" target="blank" id="">About</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
         <div class="slider" id="slider">
@@ -43,13 +42,14 @@
             <div class="prev"><i class="fa fa-arrow-left"></i></div>
             <div class="next"><i class="fa fa-arrow-right"></i></div>
         </div>
+        
         <section id="content">
+            <div class="explore">Explore</div>
             <div class="row">
-                <div class="title col-4">
-                    <div class="explore">Explore</div>
-                    <h1>Different ways to Organize your Content.</h1>
+                <div class="col-5 title">
+                    <p>Different ways to Organize your Content.</p>
                 </div>
-                <div class="description col-8">
+                <div class="col-7 description">
                     <h3>Our long standing vision has been to bypass the usual admin dashboard structure,
                          and move forward with a more sophisticated yet simple framework that would create
                           a credible impact on the many conventional dashboard users.</h3>
@@ -57,7 +57,50 @@
                 </div>
             </div>
         </section>
-        
+        <div class="advantage-container">
+            <div class="advantage">
+                <div class="icon">
+                    <img src="img/advantage_icons/Parachute.svg" alt="Parachute">
+                </div>
+                <h6 class="name">
+                    Launch Design <div class="fa fa-chevron-right"></div>
+                </h6>
+                <p class="description">
+                    Awesome notepad app. It gives you a quick and simple notepad editing experience when you write notes.
+                </p>
+                <p class="pros">
+                    Icon Fonts, Vector SVG's, pages 14x14px vector icons.
+                </p>
+            </div>
+            <div class="advantage">
+                <div class="icon">
+                    <img src="img/advantage_icons/Prizemedalion.svg" alt="Prizemedalion">
+                </div>
+                <h6 class="name">
+                    Award Wining <div class="fa fa-chevron-right"></div>
+                </h6>
+                <p class="description">
+                    Quick chat helps you to Keep in touch with your friends and colleagues while working. It has a unique responsive design.
+                </p>
+                <p class="pros">
+                    Limitless possibilities, Highly customizable, Great UI & UX
+                </p>
+            </div>
+            <div class="advantage">
+                <div class="icon">
+                    <img src="img/advantage_icons/Umbrella.svg" alt="Umbrella">
+                </div>
+                <h6 class="name">
+                    Shop ready <div class="fa fa-chevron-right"></div>
+                </h6>
+                <p class="description">
+                    This is a very young collection of charts, with the goal of keeping these components very customizable.
+                </p>
+                <p class="pros">
+                    Highly customizable NVD3, rickshaw, Spark Lines, D3.
+                </p>
+            </div>
+        </div>
     </div>
     <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -65,5 +108,6 @@
     crossorigin="anonymous"></script>
     <script src="js/partials/slider_main.js"></script>
     <script src="js/partials/header.js"></script>
+    <script src="js/partials/explore_content.js"></script>
 </body>
 </html>

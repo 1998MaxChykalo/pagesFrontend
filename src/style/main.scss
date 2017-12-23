@@ -4,8 +4,16 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #eee;
+    background-color: #fff;
     font-family: 'Roboto', sans-serif;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
 }
 
 .col-1 {

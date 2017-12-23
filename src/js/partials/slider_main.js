@@ -1,7 +1,7 @@
 
 $(function(){
     var slider = {
-        //div contains slides
+        //div which contain slides
         holder : $('.holder'),
         //current slide number
         counter : 1,

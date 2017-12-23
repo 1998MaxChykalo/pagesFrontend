@@ -1,6 +1,12 @@
+$break-small: 500px;
+
 .logo {
     text-align: center;
-    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
 }
 .hidden {
     display: none;
@@ -10,7 +16,7 @@
     display: inline-block;
 }
 
-#someDiv{
+#transitionable{
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -27,11 +33,9 @@
     height: 20vh;
     background-color: transparent;
     padding: 7vh 0;
-    .inner-fixed-nav-bar {
-        height: 100%;
-        .nav-bar {
-            padding: 0px 0 10px 0;
-        }
+    .row {
+        display: flex;
+        align-items: center;
         ul {
             height: 100%;
             a {
@@ -42,24 +46,22 @@
 }
 
 .dark {
-    height: 11vh;
+    height: 12vh;
     background: rgba(16,16,16,.9);
     padding: 2vh 0 ;
-    
     a {
         color: #fff;
     }
 }
 
 ul {
-    list-style: none;
     text-align: center;
     display: flex;
     justify-content: space-around;
     li {
         transition: .2s all;
         &:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
         a {
             display: block;
@@ -118,5 +120,27 @@ ul {
       width: 100%;
       height: 100%;
       background: #333;
+    }
+}
+
+@media (max-width: $break-small) {
+    .dark {
+        height: 15vh;
+    }
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+    .row {
+        width: auto;
+        flex-direction: column;
+    } 
+    nav.nav-bar {
+        width: 100%;
+        ul {
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
     }
 }

@@ -1,5 +1,41 @@
+$break-small: 500;
+
 #content {
+    position: relative;
     margin: auto;
-    padding: 5%;
-    background-color: #ddd;
+    padding: 10vh 10vh;
+    background-color: #fffeee;
+    .explore {
+        font-size: .67em;
+        color: #777;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .row {    
+        margin-top: 5vh;
+        .title {
+            margin: 4vh 0;
+            p {
+                color: #444;
+                letter-spacing: .1em;
+                font-size: 1.5em;
+                word-wrap: break-word;
+            }
+        }
+        .description {
+            h3 {
+                color: #444;
+                font-weight: lighter;
+                font-size: .8em;
+                letter-spacing: .1em;
+                margin: 4vh 0;
+                line-height: 1.5;
+            }
+            p {
+                color: #555;
+                letter-spacing: .01em;
+                font-size: .6rem;
+            }
+        }
+    }
 }
