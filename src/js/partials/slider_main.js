@@ -38,7 +38,11 @@ $(function(){
         
     };
     // add event handlers on arrows to help to move slides
+
     $('.prev').on('click',slider.prev);
     $('.next').on('click',slider.next);
     slider.slide();
+
+
+
 });

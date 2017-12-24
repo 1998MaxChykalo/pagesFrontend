@@ -69,16 +69,15 @@
         transform: scale(1.4) rotate(360deg);
     }
   }
-  $break-small: 500px;
+  $break-small: 768px;
   @media (max-width: $break-small) {
     .prev,
     .next {
       border-radius: 4px;
       color: #fff;
       background-color: rgba(0,0,0,.7);
-      transition: 'scale' .4s;
       &:hover {
-        transform: scale(1.4);
+        transform: none;
       }
     }
     .prev {
@@ -86,5 +85,14 @@
     }
     .next {
       right: calc(5px);
+    }
+    #slide-1 {
+      background-image: url('../../img/slider_for_phone/mountain_first_slide-min.jpg');
+    }
+    #slide-2 {
+      background-image: url('../../img/slider_for_phone/mountain_second_slide-min.jpg');
+    }
+    #slide-3 {
+      background-image: url('../../img/slider_for_phone/mountain_third_slide-min.jpg');
     }
 }
