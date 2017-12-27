@@ -9,8 +9,8 @@ $(function(){
             $('.explore').addClass('col-12');
         }
         else {
-            replaceClasses($('.explore>+row>.title'),'col-12','col-5');
-            replaceClasses($('.explore>+row>.description'),'col-12','col-7');
+            replaceClasses($('.explore+.row>.title'),'col-12','col-5');
+            replaceClasses($('.explore+.row>.description'),'col-12','col-7');
             $('.explore').removeClass('col-12');
         }
     
@@ -20,5 +20,5 @@ $(function(){
             element.removeClass(oldClass).addClass(newClass);
         }
     });
-    
+    $(window).trigger('resize');
 });

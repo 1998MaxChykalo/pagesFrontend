@@ -1,12 +1,11 @@
 .advantage-container {
-    padding: 10vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     .advantage {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        padding: 20px;
+        padding: 5vh;
         line-height: 1.5;
         h6.name {
             margin-top: 4vh;

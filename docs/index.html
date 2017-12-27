@@ -12,26 +12,27 @@
     <link rel="stylesheet" href="css/partials/slider_main.css">
     <link rel="stylesheet" href="css/partials/explore_content.css">
     <link rel="stylesheet" href="css/partials/advantages.css">
+    <link rel="stylesheet" href="css/partials/menu_clipping.css">
 
 </head>
 <body>
     <div class="container">
         
-        <header id="transitionable" class="fixed-nav-bar">
-            <div class="row">
-                <div class="col-4 logo">
-                    <img src="img/logo_black.png" class="showed" alt="">
-                    <img src="img/logo_white.png" class="hidden" alt="">    
-                </div>
-                <nav class="nav-bar col-8">
-                    <ul>
-                        <li><a href="#" target="blank" id="">Home</a></li>
-                        <li><a href="#" target="blank" id="">About</a></li>
-                        <li><a href="https://1998maxchykalo.github.io/" target="blank" id="">Portfolio</a></li>
-                        <li><a href="#" target="blank" id="">About</a></li>
-                    </ul>
-                </nav>
+        <header class="transitionable fixed-nav-bar row">
+            <div class="col-4 logo">
+                <img src="img/logo_black.png" class="showed" alt="">
+                <img src="img/logo_white.png" class="hidden" alt="">    
             </div>
+        
+            <nav class="nav-bar col-8">
+                <ul>
+                    <li><a href="#" target="blank" id="">Home</a></li>
+                    <li><a href="#" target="blank" id="">About</a></li>
+                    <li><a href="https://1998maxchykalo.github.io/" target="blank" id="">Portfolio</a></li>
+                    <li><a href="#" target="blank" id="">Contact Me</a></li>
+                    <li><a href="#" id="menu" class="icon">&#9776;</a></li>
+                </ul>
+            </nav>
         </header>
         <div class="slider" id="slider">
             <div class="holder">
@@ -101,7 +102,36 @@
                 </p>
             </div>
         </div>
+        <div class="clipping-container row">
+            <div class="clipping-item col-5" id="menu-advantages">
+                <div class="explore">Menu Clipping</div>
+                <div class="col-12 title">
+                    <p>Easier to remember and access.</p>
+                </div>
+                <div class="col-12 description">
+                    <h3>Menu clipping makes it easier to keep track of the page you are at & helps you to identify menu labels using abbreviations</h3>
+                    <p>This is something extra to give users an exceptional user experience with a condensed menu.</p>
+                </div>
+            </div>
+            <div class="clipping-item col-7">
+                <div class="phone">
+                    <img src="../../img/mobile/b_phone.png" alt="">
+                    <div class="screenshot">
+                        <div class="phone-border">
+                            <img src="../../img/mobile/screenshot_for_phone.png" alt="Screenshot">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section>
+            <div class="container">
+        
+            </div>
+        </section>
     </div>
+    
     <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

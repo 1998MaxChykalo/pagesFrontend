@@ -25,14 +25,17 @@
 
   #slide-1 {
     background-image: url('../../img/mountain_first_slide.jpg');
+    background-attachment: fixed;
     background-size: cover;
   }
   #slide-2 {
     background-image: url('../../img/mountain_second_slide.jpg');
+    background-attachment: fixed;
     background-size: cover;
   }
   #slide-3 {
     background-image: url('../../img/mountain_third_slide.jpg');
+    background-attachment: fixed;
     background-size: cover;
   }
   .slider {

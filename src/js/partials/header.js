@@ -12,7 +12,8 @@ $(function(){
         }
     });
     $('#menu').on('click', function() {
-        $('nav.nav-bar ul li').fadeToggle(1000);
-        $('nav.nav-bar ul').toggleClass('littleMenu');
+        $('nav.nav-bar ul').toggleClass('nav-bar-for-phone');
     });
+    
+    $(window).trigger('scroll');
 });
