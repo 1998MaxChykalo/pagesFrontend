@@ -12,21 +12,21 @@
             text-transform: uppercase;
             font-weight: 100;
             font-size: .7rem;
-            text-shadow: 0 0 1px #555;
+            text-shadow: 0 0 1px #333;
             .fa {
                 margin-left: 10px;
             }
         }
         p.description {
-            color: rgba(55,55,55,.7);
-            font-size: .75rem;
+            color: rgba(55,55,55,.8);
+            font-size: .8rem;
             margin-top: 6vh;
             letter-spacing: .05em;
         }
         p.pros {
             margin-top: 6vh;
-            color: rgba(144,144,144,.8);
-            font-size: .6rem;
+            color: rgba(100,100,100,.7);
+            font-size: .7rem;
         }
     }
 }
