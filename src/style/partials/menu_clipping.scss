@@ -1,7 +1,8 @@
 
 
 .clipping-container {
-    padding: 5vh;
+    background: #feeeff;
+    padding: 5vh 5vh 0 5vh;
     margin-top: 2vh;
     line-height: 1.5;
     .explore {
@@ -74,7 +75,7 @@
 
 @media screen and (max-width: 768px) {
     .clipping-container {
-        padding: 3vh;
+        padding: 3vh 3vh 0 3vh;
         .clipping-item {
             width: 100%;
             &:first-child {

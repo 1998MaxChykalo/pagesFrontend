@@ -81,13 +81,16 @@
       background-color: rgba(0,0,0,.7);
       &:hover {
         transform: none;
+        color: #fff;
+        background-color: rgba(0,0,0,.7);
+        
       }
     }
     .prev {
       left: 5px;
     }
     .next {
-      right: calc(5px);
+      right: 5px;
     }
     #slide-1 {
       background-image: url('../../img/slider_for_phone/mountain_first_slide-min.jpg');
