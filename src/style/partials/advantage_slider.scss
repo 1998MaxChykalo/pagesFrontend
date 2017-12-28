@@ -46,13 +46,14 @@
                 border-radius: 50%;
                 background: #899;
                 transition: background-color .4s ;
+                @media screen and (max-width: 768px){
+                    width: 15px;
+                    height: 15px;
+                    margin: 10px;
+                }
                 &:hover {
                     background: #444;
                     cursor: pointer;
-                }
-                @media screen and (max-width: 768px){
-                    width: 5px;
-                    height: 5px;
                 }
             }
             .active {
